@@ -11,6 +11,8 @@ namespace MVC_Habit
 {
     public class Program
     {
+        internal readonly int Id;
+
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();

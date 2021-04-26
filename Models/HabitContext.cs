@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MVC_Habit.Models;
 
 namespace MVC_Habit.Models
 {
@@ -18,6 +19,8 @@ namespace MVC_Habit.Models
             " TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False"
         );
         }
+
+        public DbSet<MVC_Habit.Models.Program> Program { get; set; }
     }
 }
 //Saving to Github
