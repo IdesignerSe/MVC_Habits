@@ -14,13 +14,11 @@ namespace MVC_Habit.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             DbContextOptionsBuilder dbContextOptionsBuilder = optionsBuilder.UseSqlServer(
-            @"Data Source = S5D011\SQLEXPRESS; Initial Catalog = HabitsCatalogen;" +
+            @"Data Source = S5D011\SQLEXPRESS; Initial Catalog = HabitCatalogen;" +
             " Integrated Security = True; Connect Timeout = 30; Encrypt = False;" +
             " TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False"
         );
         }
-
-        public DbSet<MVC_Habit.Models.Program> Program { get; set; }
     }
 }
 //Saving to Github

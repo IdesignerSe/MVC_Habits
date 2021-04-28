@@ -13,5 +13,7 @@ namespace MVC_Habit.Models
         public int QuantityProduct { get; set; }
         public string Description { get; set; }
         public string Observation { get; set; }
+
+
     }
 }

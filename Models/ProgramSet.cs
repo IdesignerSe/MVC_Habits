@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MVC_Habit.Models
 {
-    public class Program
+    public class ProgramSet
     {
         public int Id { get; set; }
         public string NameProgram { get; set; }

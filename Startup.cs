@@ -24,6 +24,8 @@ namespace MVC_Habit
         {
             services.AddControllersWithViews();
             services.AddDbContext<HabitContext>();
+            services.AddDbContext<ProgramSetContext>();
+            services.AddDbContext<ArticleContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
