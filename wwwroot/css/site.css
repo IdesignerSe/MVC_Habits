@@ -59,9 +59,8 @@ html {
 
 body {
     /* Margin bottom by footer height */
+    margin-left:30px;
     margin-bottom: 60px;
-    background-image: url('/images/bg_img_Habits_smaller.jpeg');
-    background-repeat: initial;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
