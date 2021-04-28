@@ -19,6 +19,10 @@ namespace MVC_Habit.Models
             " TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False"
         );
         }
+
+        public DbSet<MVC_Habit.Models.ProgramSet> ProgramSet { get; set; }
+
+        public DbSet<MVC_Habit.Models.Article> Article { get; set; }
     }
 }
 //Saving to Github
