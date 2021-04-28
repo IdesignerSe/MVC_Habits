@@ -5,6 +5,10 @@
 }
 
 <h1>Index</h1>
+<h5>Instructions: </h5>
+<p>You can create, edit and Update your Habit in here.</p>
+<p>Use this page to review details of your new created Habit.</p>
+
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -25,23 +29,24 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NameHabit)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TypeHabit)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DurationHabit)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NameHabit)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeHabit)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DurationHabit)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
