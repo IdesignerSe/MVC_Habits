@@ -18,9 +18,9 @@ a {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #66ff99;
+    border-color: #1861ac;
 }
 
 /* Sticky footer styles
@@ -38,7 +38,7 @@ html {
   border-top: 1px solid #e5e5e5;
 }
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #005f44;
 }
 
 .box-shadow {
@@ -49,12 +49,14 @@ button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
 }
-
+.card-header {
+    background-color: white;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
@@ -65,7 +67,6 @@ body {
 
 .footer {
   position: absolute;
-
   bottom: 0;
   width: 100%;
   white-space: nowrap;
